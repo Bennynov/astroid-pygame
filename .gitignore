@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv / packaging
+uv.lock
+# (keep uv.lock tracked for reproducible builds; remove this line if you want it tracked)
+*.egg-info/
+*.dist-info/
+build/
+dist/
+*.whl
+
+# Logs / profiling / coverage
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tooling / misc
+.eggs/
+.tox/
+.nox/
+.scratch/
