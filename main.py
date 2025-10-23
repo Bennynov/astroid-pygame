@@ -1,10 +1,11 @@
 import pygame
+import random
 import sys
-from constants import *
-from player import Player
 from asteroid import Asteroid
 from AsteroidField import AsteroidField
 from circleshape import CircleShape
+from constants import *
+from player import Player
 from shot import Shot
 def main():
     pygame.init()
@@ -41,6 +42,11 @@ def main():
             if asteroid.collisions(player):
                 print("game over!")
                 sys.exit()
+            for shot in shots:
+                if asteroid.collisions(shot):
+                    Asteroid.split(asteroid)
+                    shot.kill()
+                        
         pygame.display.flip()
         dt = clock.tick(60) / 1000
 
